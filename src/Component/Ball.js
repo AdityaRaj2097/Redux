@@ -15,7 +15,7 @@ function Ball(props) {
 const mapStatetoProps = (store) => {
   console.log("in map state");
 
-  return store;
+  return store.Ball;
 };
 
 const mapDispatgcPRops = (dispatch) => {
@@ -32,4 +32,6 @@ const mapDispatgcPRops = (dispatch) => {
 
 
 
-export default connect(mapStatetoProps, mapDispatgcPRops)(Ball);
+//  By the help of which 
+const HigherOrderCompontne = connect(mapStatetoProps, mapDispatgcPRops)(Ball);
+export default HigherOrderCompontne;
