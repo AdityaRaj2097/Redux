@@ -8,6 +8,7 @@ import Ball from "./Component/Ball";
 import Bat from "./Component/Bat";
 
 import Tudo from "./Component/Tudo";
+import User from "./Component/User";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <div className="App">
         <Ball></Ball>
         <Bat></Bat>
-        <Tudo></Tudo>
+        <User></User>
+        {/* <Tudo></Tudo> */}
       </div>
       ;
     </Provider>

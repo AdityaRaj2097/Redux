@@ -9,7 +9,7 @@ function Tudo(props) {
   return (
     <div>
       <h1> in Tudo app</h1>
-      <h1> i n tudeo component</h1>
+      <h1> Implemented Tudu</h1>
 
       <input
         value={value}
@@ -31,7 +31,7 @@ function Tudo(props) {
       <div>
         <ul>
           {props.task.map((person, idx) => {
-            return <li key={idx}>{person}years old</li>;
+            return <li key={idx}>{person}</li>;
           })}
         </ul>
       </div>
@@ -39,22 +39,16 @@ function Tudo(props) {
   );
 }
 
+//  taki hum state excess kr payien  in tudo by the help of this function
 const mapstatetoProps = (store) => {
   console.log(" IN MAP STROE");
-  return store.Tudo;
+return store.Tudo;
 };
 
-// const mapDispathctoPRosp = (dispatch) => {
-//   return {
-//     AddTask: () => {
-//       return dispatch({ type: "AddTask", currentTask: "" });
-//     },
-//     Deletestask: () => {
-//       return dispatch({ type: " Deletestask" });
-//     },
-//   };
-// };
 
+
+
+//  task add task function hume tudo m mil jayien by props
 const mapDispatchToProps = (dispatch) => {
   return {
     // dispatching plain actions
