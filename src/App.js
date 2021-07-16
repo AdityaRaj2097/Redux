@@ -7,7 +7,7 @@ import store from "./store";
 import Ball from "./Component/Ball";
 import Bat from "./Component/Bat";
 
-// import Bat from "./Component/Bat";
+import Tudo from "./Component/Tudo";
 
 function App() {
   return (
@@ -15,6 +15,7 @@ function App() {
       <div className="App">
         <Ball></Ball>
         <Bat></Bat>
+        <Tudo></Tudo>
       </div>
       ;
     </Provider>

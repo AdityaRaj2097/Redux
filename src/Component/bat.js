@@ -27,11 +27,10 @@ function Bat(props) {
 }
 // 5 -> provide state variables from store
 
-
 //  simple si baat hai isme hum isme hum global stroe milegi but hum bat component ko sirf bat wali
 //  store provide kraynge jo bat ko need hai isliye isme hum stro.bat passs karenge
 const mapStateToProps = (store) => {
-  console.log("in map state to prop", store);
+  // console.log("in map state to prop", store);
   // state variables change
   return store.Bat;
 };
@@ -41,7 +40,7 @@ const mapDispatchtoProps = (dispatch) => {
   // handler function
   return {
     setBat: (val) => {
-      dispatch({
+      return dispatch({
         type: "buy_bat",
         // data send to reducer function
         payload: val,

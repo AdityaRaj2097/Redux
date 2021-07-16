@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 function Ball(props) {
-  console.log("Props---->", props);
+  // console.log("Props---->", props);
   return (
     <div>
       <h1> Number of balls {props.balls}</h1>
@@ -30,8 +30,6 @@ const mapDispatgcPRops = (dispatch) => {
   };
 };
 
-
-
-//  By the help of which 
+//  By the help of which
 const HigherOrderCompontne = connect(mapStatetoProps, mapDispatgcPRops)(Ball);
 export default HigherOrderCompontne;

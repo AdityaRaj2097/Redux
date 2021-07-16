@@ -3,11 +3,11 @@ let initialState = {
   dummyState: "Hello",
 };
 function BatReducer(state = initialState, action) {
-  console.log(state);
+  // console.log(state);
   switch (action.type) {
     case "buy_bat":
       // store update
-      console.log(action.payload);
+      // console.log(action.payload);
       let newObject = {
         ...state,
         quantity: state.quantity - action.payload,
