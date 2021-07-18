@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import BatReducer from "./bat/BatReducer";
 import BallReducer from "./ball/Ballreducer";
-// import TudoReducer from "./Tudo/tudoreducer";
+import TudoReducer from "./Tudo/tudoreducer";
 import UserReducer from "./User/userreducer";
 
 console.log("root Reducer");
@@ -9,7 +9,7 @@ console.log("root Reducer");
 const rootReducer = combineReducers({
   Ball: BallReducer,
   Bat: BatReducer,
-  // Tudo: TudoReducer,
+  Tudo: TudoReducer,
   User: UserReducer,
 });
 export default rootReducer;

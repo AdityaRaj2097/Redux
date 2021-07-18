@@ -30,9 +30,25 @@ function Tudo(props) {
 
       <div>
         <ul>
-          {props.task.map((person, idx) => {
-            return <li key={idx}>{person}</li>;
-          })}
+          {
+            // console.log(props.task)
+            props.task.map((person, idx) => {
+              console.log(person, " in  person object");
+              // console.log(person.task, " in props person object");
+              console.log(props.task, " in props");
+              return (
+                <li
+                  key={idx}
+                  onClick={() => {
+                    props.deletask(person.id);
+                  }}
+                >
+                  {" "}
+                  {person.task}
+                </li>
+              );
+            })
+          }
         </ul>
       </div>
     </div>
@@ -41,18 +57,16 @@ function Tudo(props) {
 
 //  taki hum state excess kr payien  in tudo by the help of this function
 const mapstatetoProps = (store) => {
-  console.log(" IN MAP STROE");
-return store.Tudo;
+  // console.log(" IN MAP STROE");de
+  return store.Tudo;
 };
-
-
-
 
 //  task add task function hume tudo m mil jayien by props
 const mapDispatchToProps = (dispatch) => {
   return {
     // dispatching plain actions
     AddTask: (val) => dispatch({ type: "AddTask", currentTask: val }),
+    deletask: (idx) => dispatch({ type: "deletask", idx: idx }),
   };
 };
 

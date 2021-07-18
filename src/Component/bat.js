@@ -49,3 +49,12 @@ const mapDispatchtoProps = (dispatch) => {
   };
 };
 export default connect(mapStateToProps, mapDispatchtoProps)(Bat);
+{/* <li
+key={idx}
+onClick={() => {
+  props.deletask(idx);
+}}
+>
+{" "}
+{person.name}
+</li> */}

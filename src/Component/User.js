@@ -69,8 +69,8 @@ function User(props) {
         <div>
           <h2> user find sucessfull</h2>
 
-          {users.map((person) => {
-            return <div> {person.name}</div>;
+          {users.map((person, idx) => {
+            return <div key={idx}> {person.name}</div>;
           })}
         </div>
       )}

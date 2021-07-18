@@ -17,7 +17,7 @@ function App() {
         <Ball></Ball>
         <Bat></Bat>
         <User></User>
-        {/* <Tudo></Tudo> */}
+        <Tudo></Tudo>
       </div>
       ;
     </Provider>
